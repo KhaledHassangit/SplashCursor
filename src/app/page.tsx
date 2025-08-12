@@ -1,10 +1,11 @@
-import LightRays from "./components/NavBar";
+import LightRays from "./components/LightRayes";
 import SplashCursor from "./components/SplashCursor";
+import TunnelExperience from "./components/TunnelExperience";
 
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div style={{ width: '100%', height: '600px', position: 'relative' }}>
+      <div style={{ width: '100%', height: '600px', position: 'relative' ,zIndex:0, pointerEvents: 'none',}}>
         <LightRays
           raysOrigin="top-center"
           raysColor="#00ffff"
@@ -19,6 +20,7 @@ export default function Home() {
         />
       </div>
       <SplashCursor />
+      <TunnelExperience />
     </div>
   );
 }
