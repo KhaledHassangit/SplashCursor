@@ -6,9 +6,9 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export default function TunnelExperience() {
-  const sceneRef = useRef<THREE.Scene>();
-  const tubeRef = useRef<THREE.Mesh>();
-  const wireframeRef = useRef<THREE.LineSegments>();
+  const sceneRef = useRef<THREE.Scene>(null);
+  const tubeRef = useRef<THREE.Mesh>(null);
+  const wireframeRef = useRef<THREE.LineSegments>(null);
 
   useEffect(() => {
     if (typeof window === "undefined") return;

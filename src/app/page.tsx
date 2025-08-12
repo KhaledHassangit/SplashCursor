@@ -4,11 +4,11 @@ import TunnelExperience from "./components/TunnelExperience";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div style={{ width: '100%', height: '600px', position: 'relative' ,zIndex:0, pointerEvents: 'none',}}>
+    < >
+      <div style={{ width: '100%', height: '100vh', position: 'relative' ,zIndex:0, pointerEvents: 'none',}}>
         <LightRays
           raysOrigin="top-center"
-          raysColor="#00ffff"
+          raysColor="#FF66CC" 
           raysSpeed={1.5}
           lightSpread={0.8}
           rayLength={1.2}
@@ -21,6 +21,6 @@ export default function Home() {
       </div>
       <SplashCursor />
       <TunnelExperience />
-    </div>
+    </>
   );
 }
